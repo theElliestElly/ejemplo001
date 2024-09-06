@@ -1,8 +1,11 @@
 class Tar2 
 
+    def inicia (vari)
+        @vari = vari
+    end
     def cadena
         puts "Se inicializa esta cadena"
-        String ola = "Hola mi nombre es Elise tambien pueden decirme Elly por favor ignorar mi nombre legal gracias"
+        ola = @vari.lowercase
         puts ola
         colec = ola.split(" ")
         cont = Hash.new(0)
@@ -17,5 +20,6 @@ class Tar2
     end
 
 end
-t2 = Tar2.new
+vari="Hola hola, Elise aquí, espero se encuentren bastante bien ciertamente no lo estoy nos vemos"
+t2 = Tar2.new(vari)
 puts t2.cadena
