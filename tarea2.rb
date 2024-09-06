@@ -18,7 +18,7 @@
                 puts "La palabra: [#{pale}] se repite [#{fred}] veces"
             end
 
-        end
+        end 
         def to_s
             "sobrecarga con metodo to_s:'#{@vari}'"
         end
